@@ -1,0 +1,33 @@
+# Made by: Samuel Sidzyik
+# Module 1.3 Assignment.py
+# Start Date October 22, 2025
+# This program calculates the cost of fiber instal based on constant rate per foot and user provided length
+
+# Added some extras the mostly come from work. We use either use system.gethostname for checking our server name or system..getcurrent()name.
+# I figured Python could do the same and found in https://www.geeksforgeeks.org/python/how-to-get-the-current-username-in-python/
+# I had copilot enabled in the IDE and started with that but I don't like it trying to type while I'm typing. Too distracting. I turned it off. I completed this before your reply today. Sorry!
+# Also I agree on not going with full AI integration as that doesn't help understand the basics. I just wanted to put up a full scale to get as accurate judgement as possible on your expectations.
+
+# Start
+import os
+import time
+
+# Greeting. I added the get os name. We use this to check server names at work.
+print(f"Hello {os.getlogin()}.")
+print("this"+ 'asdf' +"that")
+time.sleep(1) #You always add unnecessary pauses to allow yourself to refactor later and improve timing.
+
+#*insert Jim Carey face. Cable Guy!!!!
+print("We will be calculating the cost of installing fiber optic cable for Cable Guy Co.") 
+time.sleep(1)
+
+#Basic variable assignment.
+cablelength = int(input("How many feet of cable will be installed?: "))
+time.sleep(1)
+
+#Basic Math
+totalcost = cablelength * 0.87
+
+#No need to wait between calculation and printing.
+#Print 2 decimal places using ;,.2f. I knew this from previous lessons but used google's prompt answer to get how to do it again
+print(f"The total cost for installing {cablelength} feet of cable is ${totalcost:,.2f}.")
